@@ -7,7 +7,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 public class MainActivity extends AppCompatActivity {
-    Button button;
+    Button button, button2;
     TextView textView;
 
     @Override
@@ -16,10 +16,17 @@ public class MainActivity extends AppCompatActivity {
         setContentView(R.layout.activity_main);
 
         button = findViewById(R.id.button);
+        button2 = findViewById(R.id.button2);
         textView = findViewById(R.id.textView);
         button.setOnClickListener((v) -> {
             Toast.makeText(this, "Click", Toast.LENGTH_LONG).show();
             textView.setText("Clicked");
         });
+
+        button2.setOnClickListener((v) -> {
+            button.setText("Тряпка");
+        });
+
+
     }
 }
