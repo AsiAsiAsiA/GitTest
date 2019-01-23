@@ -25,8 +25,7 @@ public class MainActivity extends AppCompatActivity {
 
         button2.setOnClickListener((v) -> {
             button.setText("Тряпка");
+            Toast.makeText(this, "Change name button", Toast.LENGTH_LONG).show();
         });
-
-
     }
 }
